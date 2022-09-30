@@ -77,7 +77,6 @@ main {
   display: flex;
   flex-direction: column;
   margin-left: 25px;
-  border-bottom: solid 1px #ebedef;
 }
 
 .title-text-1 {
@@ -93,7 +92,7 @@ main {
   font-weight: 500;
   line-height: 22px;
   color: #303134;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 /* Container Notice*/
@@ -150,9 +149,7 @@ main {
 }
 
 .column-left {
-  margin-right: 60px;
-  border-left: 1px solid #ebedef;
-  border-right: 1px solid #ebedef;
+  margin-right: 20px;
 }
 
 .news-card {
@@ -172,7 +169,8 @@ main {
 */
 
 .red {
-  color: rgba(205, 21, 11, 1);
+  /* color: rgba(205, 21, 11, 1); */
+  color: #CD150B;
 }
 
 .green {
@@ -191,6 +189,20 @@ main {
   font-family: EncodeSans-SemiBold;
   font-size: 18px;
   line-height: 25px;
+}
+
+.line-horizontal {
+  width: 93%;
+  height: 1px;
+  background-color: #ebedef;
+  margin: 15px 0px;
+}
+
+.line-vertical {
+  width: 1px;
+  height: 845px;
+  background-color: #ebedef;
+  margin-right: 20px;
 }
 
 h1 {
@@ -244,16 +256,47 @@ a:hover {
   }
 
   .mobile-icons {
-    border-top: solid 1px #e6e6e6;
-    border-bottom: solid 1px #e6e6e6;
-    margin-top: 25px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .mobile-line {
+    width: 100%;
+    height: 1px;
+    background-color: #E6E6E6;
+    margin: 7px 0px;
+  }
+
+  .icons-link {
+    font-family: EncodeSans-SemiBold;
+  }
+
+  .g1 {    
+    color: #A80001;
+  }
+  
+  .ge {
+    color: #06AA48;
+  }
+
+  .gshow {
+    color: #FF7F00;
+  }
+
+  .tech {
+    color: #666666;
+  }
+
+  .videos {
+    color: #0769DE;
   }
 
   .mobile-title {
     font-family: EncodeSans-SemiBold;
     font-size: 32px;
     line-height: 40px;
-    margin: 25px 0px;
+    margin-top: 5px;
   }
 
   .mobile-subtitle {
